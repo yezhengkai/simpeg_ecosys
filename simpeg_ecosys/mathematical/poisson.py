@@ -248,7 +248,7 @@ class PoissonCellCentered(object):
                     "Perturbing first row of A to remove nullspace for Neumann BC."
                 )
             # Handling Null space of A
-            _, J, _ = sp.sparse.find(A[0, :])
+            _, J, _ = sp.find(A[0, :])
             for jj in J:
                 A[0, jj] = 0.0
             A[0, 0] = 1.0
