@@ -1,0 +1,6 @@
+name: simpeg-ecosys-dev
+dependencies:
+  - python>=3.8
+  - pip
+  - pip:
+    - -r requirements_dev.txt
